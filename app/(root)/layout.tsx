@@ -27,7 +27,7 @@ export default function RootLayout({
   {/* Scrollable content area */}
 
     {/* Fixed header */}
-    <div className="absolute bg-fuchsia-900 z-50 inset-0 flex h-16 items-center justify-between p-5 sm:p-8 md:hidden">
+    <div className="absolute bg-blue-700 z-50 inset-0 flex h-16 items-center justify-between p-5 sm:p-8 md:hidden">
       {/* <Image 
         src="/assets/images/osbicanada.png" 
         width={120} 

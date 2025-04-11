@@ -23,14 +23,14 @@ export default function StatisticsDashboard() {
   const lineData = [
     { date: '1/1', Expenses: 105708, Income: 230905 },
     { date: '1/2', Expenses: 90690, Income: 216700 },
-    { date: '1/3', Expenses: 126700, Income: 253700 },
-    { date: '1/4', Expenses: 99510, Income: 195400 },
-    { date: '1/5', Expenses: 200560, Income: 1158963 },
-    { date: '1/6', Expenses: 1023742, Income: 200678 },
-    { date: '1/7', Expenses: 100678, Income: 9662393 },
-    { date: '1/8', Expenses: 100678, Income: 9662393 },
-    { date: '1/9', Expenses: 100678, Income: 9662393 },
-    { date: '1/10', Expenses: 100678, Income: 9662393 },
+    { date: '1/3', Expenses: 16700, Income: 25300 },
+    { date: '1/4', Expenses: 9954410, Income: 195400 },
+    { date: '1/5', Expenses: 600560, Income: 1589763 },
+    { date: '1/6', Expenses: 1033742, Income: 200678 },
+    { date: '1/7', Expenses: 1004678, Income: 9662393 },
+    { date: '1/8', Expenses: 10354478, Income: 1762393 },
+    { date: '1/9', Expenses: 4330678, Income: 972393 },
+    { date: '1/10', Expenses: 2300678, Income: 462393 },
   ];
 
   return (
@@ -81,13 +81,12 @@ export default function StatisticsDashboard() {
   
 
 
-       <div className='mt-4 bg-white rounded-lg shadow-md flex flex-col lg:hidden'>
-            <div className='flex items-center justify-between p-2'>
-              <h1 className='font-bold'>Recent Transactions</h1>
-              <p>More</p>
-      
-            </div>
-      
+       <div className='my-4 bg-white rounded-lg shadow-md flex flex-col lg:hidden'>
+       <div className='flex items-center justify-between p-2'>
+                  <h1 className='font-bold'>Recent Transactions</h1>
+                  <p className='text-sm text-blue-600 hover:text-blue-800 duration-300 cursor-pointer'>More</p>
+          
+                </div>
             <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
               <div className='flex gap-2'>
                 <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faHeadphonesSimple} className='text-pink-500 text-lg'/></span>
@@ -118,7 +117,7 @@ export default function StatisticsDashboard() {
       
             <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
               <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'>  <FontAwesomeIcon icon={faBagShopping} className='text-pink-500 text-lg' /></span>
+                <span className='px-3 py-2 rounded-lg bg-[#7bf8f8]'>  <FontAwesomeIcon icon={faBagShopping} className='text-[#00c0c0] text-lg' /></span>
                 <div className=''>
                   <h4 className='font-bold text-md'>Shopping</h4>
                   <p className='text-xs text-gray-400'>20.11.2021</p>
@@ -146,8 +145,8 @@ export default function StatisticsDashboard() {
       
             <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
               <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'>
-                <FontAwesomeIcon icon={faGamepad} className='text-pink-500 text-lg' /></span>
+                <span className='px-3 py-2 rounded-lg bg-[#ad92b9]'>
+                <FontAwesomeIcon icon={faGamepad} className='text-[#7e00b4] text-lg' /></span>
                 <div className=''>
                   <h4 className='font-bold text-md'>Games</h4>
                   <p className='text-xs text-gray-400'>20.11.2021</p>
@@ -157,34 +156,6 @@ export default function StatisticsDashboard() {
               <div className="flex items-center gap-2">
                   
                   <div className='p-3 rounded-lg bg-gradient-to-r from-violet-200 to-pink-200'>
-                    <Image 
-                    src='/images/mastercard.png'
-                    alt="card"
-                    width={40}
-                    height={40}
-                    />
-                  </div>
-                  <div className='details'>
-                    <h2 className='text-sm text-gray-400'>*2342</h2>
-                    <p className='text-xs text-gray-300'>Credit Card</p>
-              </div>
-            </div>
-      
-            <h4 className='font-bold text-md'>$20</h4>
-          </div>
-      
-            <div className='flex items-center justify-between py-4 px-2 '>
-              <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faUtensils} className='text-pink-500 text-lg'/></span>
-                <div className=''>
-                  <h4 className='font-bold text-md'>Restaurant</h4>
-                  <p className='text-xs text-gray-400'>20.11.2021</p>
-                </div>
-              </div>
-      
-              <div className="flex items-center gap-2">
-                  
-                  <div className='p-3 rounded-lg bg-gradient-to-r from-indigo-200 to-yellow-100'>
                     <Image 
                     src='/images/visa.png'
                     alt="card"
@@ -201,10 +172,38 @@ export default function StatisticsDashboard() {
             <h4 className='font-bold text-md'>$20</h4>
           </div>
       
+            <div className='flex items-center justify-between py-4 px-2 '>
+              <div className='flex gap-2'>
+                <span className='px-3 py-2 rounded-lg bg-green-300'><FontAwesomeIcon icon={faUtensils} className='text-green-500 text-lg'/></span>
+                <div className=''>
+                  <h4 className='font-bold text-md'>Restaurant</h4>
+                  <p className='text-xs text-gray-400'>20.11.2021</p>
+                </div>
+              </div>
       
+              <div className="flex items-center gap-2">
+                  
+                  <div className='p-3 rounded-lg bg-gradient-to-r from-indigo-200 to-yellow-100'>
+                    <Image 
+                    src='/images/mastercard.png'
+                    alt="card"
+                    width={40}
+                    height={40}
+                    />
+                  </div>
+                  <div className='details'>
+                    <h2 className='text-sm text-gray-400'>*2342</h2>
+                    <p className='text-xs text-gray-300'>Credit Card</p>
+              </div>
+            </div>
       
-      
+            <h4 className='font-bold text-md'>$20</h4>
           </div>
+      
+      
+      
+      
+        </div>
     </div>
   );
 }

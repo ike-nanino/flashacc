@@ -76,7 +76,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
       <Sheet>
         <SheetTrigger>
 
-          <FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(!isOpen)} className="text-2xl font-extrabold text-blue-800" />
+          <FontAwesomeIcon icon={faBars} onClick={() => setIsOpen(!isOpen)} className="text-2xl font-extrabold text-white" />
 
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-white">

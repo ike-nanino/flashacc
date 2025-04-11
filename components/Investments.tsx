@@ -4,7 +4,11 @@ import React from 'react'
 function Investments() {
   return (
     <div className='w-full bg-white rounded-lg shadow-md pt-4 '>
-        <h2 className='text-2xl font-bold text-center mb-3'>Investments</h2>
+        <div className='flex items-center justify-between p-2'>
+                  <h1 className='font-bold'>Investments</h1>
+                  <p className='text-sm text-blue-600 hover:text-blue-800 duration-300 cursor-pointer'>More</p>
+          
+                </div>
         <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
             <Image 
             src='/images/uniliver.png'
