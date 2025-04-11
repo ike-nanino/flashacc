@@ -10,7 +10,7 @@ config.autoAddCss = false;
 function RightSide() {
   return (
 
-    <aside className='no-scrollbar hidden  min-h-screen flex-col border-l border-gray-200 lg:flex w-[355px] xl:overflow-y-hidden'>
+    <aside className='no-scrollbar hidden  min-h-screen flex-col lg:flex w-[355px] xl:overflow-y-hidden'>
 
 
     
@@ -109,7 +109,7 @@ function RightSide() {
       <h4 className='font-bold text-md'>$20</h4>
     </div>
 
-      <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
+      <div className='flex items-center justify-between py-4 px-2 '>
         <div className='flex gap-2'>
           <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faHeadphonesSimple} className='text-pink-500 text-lg'/></span>
           <div className=''>

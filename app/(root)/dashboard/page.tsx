@@ -29,7 +29,7 @@ function Dashboard({
 
 
   return (
-    <section className=' bg-gray-300 flex no-scrollbar'>
+    <section className=' bg-[#0b0f0fa9] flex no-scrollbar pt-20 lg:pt-3'>
 
       <div className='flex gap-4'>
 
@@ -39,7 +39,7 @@ function Dashboard({
 
 
             <div
-              className="relative w-[300px] sm:w-[350px] h-[190px] sm:h-[220px] perspective cursor-pointer"
+              className="relative w-[400px] sm:w-[350px] h-[290px] sm:h-[220px] perspective cursor-pointer"
 
             >
               <div
@@ -155,27 +155,35 @@ function Dashboard({
                 <FontAwesomeIcon icon={faPlus} />
               </div>
 
-              <div className='flex items-center gap-2 bg-yellow-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
+              <div className='flex items-center gap-2 bg-white rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-orange-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
-                  <h4>$50</h4>
+                  <h4 className='font-bold'>$50</h4>
                 </div>
               </div>
 
               <div className='flex items-center gap-2 bg-fuchsia-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
+                <span className='w-4 h-4 rounded-full bg-fuchsia-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
-                  <h4>$50</h4>
+                  <h4 className='font-bold'>$50</h4>
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
+              <div className='flex items-center gap-2 bg-rose-300 rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-rose-500'></span>
                 <div className="flex items-center gap-2">
-                  <h5>Training</h5>
-                  <h4>$50</h4>
+                  <h5 className='text-rose-500'>Training</h5>
+                  <h4 className='text-rose-500 font-bold'>$50</h4>
+                </div>
+              </div>
+
+              <div className='flex items-center gap-2 bg-[#7bf8f8] rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-[#00c0c0]'></span>
+                <div className='flex items-center gap-2'>
+                  <h5 className='text-[#00c0c0]'>Training</h5>
+                  <h4 className='text-[#00c0c0] font-bold'>$50</h4>
                 </div>
               </div>
 
@@ -183,15 +191,7 @@ function Dashboard({
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
-                  <h4>$50</h4>
-                </div>
-              </div>
-
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
-                <div className='flex items-center gap-2'>
-                  <h5>Training</h5>
-                  <h4>$50</h4>
+                  <h4 className='font-bold' >$50</h4>
                 </div>
               </div>
 
