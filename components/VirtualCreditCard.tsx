@@ -1,7 +1,7 @@
 
 
 import Image from 'next/image'
-import { useState } from 'react'
+
 import clsx from 'clsx'
 
 type CardType = 'visa' | 'mastercard'

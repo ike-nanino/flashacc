@@ -40,7 +40,7 @@ export default function RootLayout({
     </div>
 
     {/* Scrollable content container */}
-    <div className="flex-1 overflow-y-auto xl:pl-10">
+    <div className="flex-1 overflow-y-auto">
       {children}
       <Toaster position="top-right" richColors />
     </div>
