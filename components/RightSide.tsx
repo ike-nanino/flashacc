@@ -18,7 +18,7 @@ function RightSide() {
     <div className='flex-1 mr-2'>
     <Investments />
 
-    <div className='mt-4 bg-white rounded-lg shadow-md'>
+    <div className='mt-4 bg-transparent rounded-lg shadow-md'>
       <div className='flex items-center justify-between'>
         <h1>Recent Transaactions</h1>
         <p>More</p>

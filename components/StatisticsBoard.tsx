@@ -3,9 +3,6 @@
 import { 
   LineChart, 
   Line, 
-  PieChart, 
-  Pie, 
-  Cell, 
   XAxis, 
   YAxis, 
   CartesianGrid, 
@@ -15,7 +12,7 @@ import {
 } from 'recharts';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faHeadphonesSimple } from '@fortawesome/free-solid-svg-icons'
+import {  faHeadphonesSimple, faBagShopping, faGamepad, faUtensils} from '@fortawesome/free-solid-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Image from 'next/image';
@@ -37,7 +34,7 @@ export default function StatisticsDashboard() {
   ];
 
   return (
-    <div className="w-full space-y-6 mt-4">
+    <div className="space-y-6 mt-4 px-3 w-full">
       {/* Statistics Section */}
       <div className="bg-white px-1 py-6 md:py-0 md:p-6 rounded-xl shadow-sm">
         <div className="flex justify-between items-center mb-6">
@@ -85,8 +82,8 @@ export default function StatisticsDashboard() {
 
 
        <div className='mt-4 bg-white rounded-lg shadow-md flex flex-col lg:hidden'>
-            <div className='flex items-center justify-between'>
-              <h1>Recent Transaactions</h1>
+            <div className='flex items-center justify-between p-2'>
+              <h1 className='font-bold'>Recent Transactions</h1>
               <p>More</p>
       
             </div>
@@ -121,9 +118,9 @@ export default function StatisticsDashboard() {
       
             <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
               <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faHeadphonesSimple} className='text-pink-500 text-lg'/></span>
+                <span className='px-3 py-2 rounded-lg bg-pink-300'>  <FontAwesomeIcon icon={faBagShopping} className='text-pink-500 text-lg' /></span>
                 <div className=''>
-                  <h4 className='font-bold text-md'>Music</h4>
+                  <h4 className='font-bold text-md'>Shopping</h4>
                   <p className='text-xs text-gray-400'>20.11.2021</p>
                 </div>
               </div>
@@ -149,18 +146,19 @@ export default function StatisticsDashboard() {
       
             <div className='flex items-center justify-between py-4 px-2 border-b border-b-gray-300'>
               <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faHeadphonesSimple} className='text-pink-500 text-lg'/></span>
+                <span className='px-3 py-2 rounded-lg bg-pink-300'>
+                <FontAwesomeIcon icon={faGamepad} className='text-pink-500 text-lg' /></span>
                 <div className=''>
-                  <h4 className='font-bold text-md'>Music</h4>
+                  <h4 className='font-bold text-md'>Games</h4>
                   <p className='text-xs text-gray-400'>20.11.2021</p>
                 </div>
               </div>
       
               <div className="flex items-center gap-2">
                   
-                  <div className='p-3 rounded-lg bg-gradient-to-r from-indigo-200 to-yellow-100'>
+                  <div className='p-3 rounded-lg bg-gradient-to-r from-violet-200 to-pink-200'>
                     <Image 
-                    src='/images/visa.png'
+                    src='/images/mastercard.png'
                     alt="card"
                     width={40}
                     height={40}
@@ -177,9 +175,9 @@ export default function StatisticsDashboard() {
       
             <div className='flex items-center justify-between py-4 px-2 '>
               <div className='flex gap-2'>
-                <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faHeadphonesSimple} className='text-pink-500 text-lg'/></span>
+                <span className='px-3 py-2 rounded-lg bg-pink-300'><FontAwesomeIcon icon={faUtensils} className='text-pink-500 text-lg'/></span>
                 <div className=''>
-                  <h4 className='font-bold text-md'>Music</h4>
+                  <h4 className='font-bold text-md'>Restaurant</h4>
                   <p className='text-xs text-gray-400'>20.11.2021</p>
                 </div>
               </div>

@@ -23,23 +23,23 @@ interface VirtualCardProps {
   bgGradient?: string
 }
 
-function Dashboard({ 
+function Dashboard({
 }: VirtualCardProps) {
 
 
 
   return (
-    <section className=' bg-[#0b0f0fa9] flex no-scrollbar pt-20 lg:pt-3'>
+    <section className=' bg-[#c7c7c7] flex no-scrollbar pt-20 lg:pt-3'>
 
       <div className='flex gap-4'>
 
-        <div className='w-full pl-4 lg:w-2/3 flex flex-col items-center justify-center'>
+        <div className='w-full lg:pl-4 lg:w-2/3 flex flex-col items-center justify-center'>
 
-          <div className='flex flex-col lg:flex-row items-center gap-1'>
+          <div className='flex flex-col lg:flex-row items-center gap-4 lg:gap-1'>
 
 
             <div
-              className="relative w-[400px] sm:w-[350px] h-[290px] sm:h-[220px] perspective cursor-pointer"
+              className="relative w-[350px] sm:w-[350px] h-[240px] sm:h-[220px] perspective cursor-pointer"
 
             >
               <div
@@ -92,7 +92,7 @@ function Dashboard({
             </div>
 
             <div
-              className="relative w-[300px] sm:w-[350px] h-[190px] sm:h-[220px] perspective cursor-pointer"
+              className="relative w-[350px] sm:w-[350px] h-[240px] sm:h-[220px] perspective cursor-pointer"
 
             >
               <div
@@ -148,17 +148,23 @@ function Dashboard({
           </div>
 
 
-          <div className='mt-3 flex flex-col items-center justify-between'>
-            <h2 className='font-medium my-4'>Fast Payment</h2>
-            <div className='flex items-center flex-wrap gap-4'>
-              <div className='p-2 bg-blue-400 rounded-md flex items-center gap-2'>
+          <div className='mt-3 flex flex-col items-center justify-between px-1'>
+            <div className='flex items-center gap-4'>
+
+
+              <h2 className='font-medium my-4'>Fast Payment</h2>
+              <div className='px-2 py-1 bg-blue-400 rounded-md'>
                 <FontAwesomeIcon icon={faPlus} />
               </div>
+
+            </div>
+            <div className='grid grid-cols-3 md:grid-cols-4 gap-4'>
+
 
               <div className='flex items-center gap-2 bg-white rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-orange-500'></span>
                 <div className='flex items-center gap-2'>
-                  <h5>Training</h5>
+                  <h5>Food</h5>
                   <h4 className='font-bold'>$50</h4>
                 </div>
               </div>
@@ -166,7 +172,7 @@ function Dashboard({
               <div className='flex items-center gap-2 bg-fuchsia-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-fuchsia-500'></span>
                 <div className='flex items-center gap-2'>
-                  <h5>Training</h5>
+                  <h5>Internet</h5>
                   <h4 className='font-bold'>$50</h4>
                 </div>
               </div>
@@ -174,7 +180,7 @@ function Dashboard({
               <div className='flex items-center gap-2 bg-rose-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-rose-500'></span>
                 <div className="flex items-center gap-2">
-                  <h5 className='text-rose-500'>Training</h5>
+                  <h5 className='text-rose-500'>Gas</h5>
                   <h4 className='text-rose-500 font-bold'>$50</h4>
                 </div>
               </div>
@@ -182,24 +188,24 @@ function Dashboard({
               <div className='flex items-center gap-2 bg-[#7bf8f8] rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-[#00c0c0]'></span>
                 <div className='flex items-center gap-2'>
-                  <h5 className='text-[#00c0c0]'>Training</h5>
+                  <h5 className='text-[#00c0c0]'>Electricity</h5>
                   <h4 className='text-[#00c0c0] font-bold'>$50</h4>
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
+              <div className='flex items-center gap-2 bg-[#d170c1] rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-[#72005f]'></span>
                 <div className='flex items-center gap-2'>
-                  <h5>Training</h5>
-                  <h4 className='font-bold' >$50</h4>
+                  <h5 className='text-[#72005f]'>Shopping</h5>
+                  <h4 className='font-bold text-[#72005f]' >$50</h4>
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-green-500'></span>
+              <div className='flex items-center gap-2 bg-[#ad92b9] rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-[#7e00b4]'></span>
                 <div className='flex items-center gap-2'>
-                  <h5>Training</h5>
-                  <h4>$50</h4>
+                  <h5 className='text-[#7e00b4]'>Movies</h5>
+                  <h4 className='font-bold text-[#7e00b4]'>$50</h4>
                 </div>
               </div>
             </div>
@@ -210,7 +216,7 @@ function Dashboard({
         </div>
 
 
-<RightSide />
+        <RightSide />
       </div>
 
     </section>
