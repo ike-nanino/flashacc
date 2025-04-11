@@ -9,6 +9,11 @@ config.autoAddCss = false;
 
 function RightSide() {
   return (
+
+    <aside className='no-scrollbar hidden  min-h-screen flex-col border-l border-gray-200 lg:flex w-[355px] xl:overflow-y-hidden'>
+
+
+    
     
     <div className='flex-1 mr-2'>
     <Investments />
@@ -139,6 +144,7 @@ function RightSide() {
     
 
   </div>
+  </aside>
   )
 }
 

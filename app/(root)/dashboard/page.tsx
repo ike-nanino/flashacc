@@ -8,6 +8,7 @@ import Investments from '@/components/Investments';
 import Image from 'next/image';
 import clsx from 'clsx';
 import RightSide from '@/components/RightSide';
+import StatisticsDashboard from '@/components/StatisticsBoard';
 config.autoAddCss = false;
 
 type CardType = 'visa' | 'mastercard'
@@ -28,11 +29,11 @@ function Dashboard({
 
 
   return (
-    <section className='pt-20 lg:pt-5 bg-gray-300'>
+    <section className=' bg-gray-300 flex no-scrollbar'>
 
       <div className='flex gap-4'>
 
-        <div className='w-full lg:w-2/3 flex flex-col items-center justify-center'>
+        <div className='w-full pl-4 lg:w-2/3 flex flex-col items-center justify-center'>
 
           <div className='flex flex-col lg:flex-row items-center gap-1'>
 
@@ -150,11 +151,11 @@ function Dashboard({
           <div className='mt-3 flex flex-col items-center justify-between'>
             <h2 className='font-medium my-4'>Fast Payment</h2>
             <div className='flex items-center flex-wrap gap-4'>
-              <div className='p-4 bg-blue-400 rounded-md flex items-center gap-2'>
+              <div className='p-2 bg-blue-400 rounded-md flex items-center gap-2'>
                 <FontAwesomeIcon icon={faPlus} />
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-yellow-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
@@ -162,7 +163,7 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-fuchsia-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
@@ -170,7 +171,7 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className="flex items-center gap-2">
                   <h5>Training</h5>
@@ -178,7 +179,7 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
@@ -186,7 +187,7 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
@@ -194,7 +195,7 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-4'>
+              <div className='flex items-center gap-2 bg-blue-300 rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-green-500'></span>
                 <div className='flex items-center gap-2'>
                   <h5>Training</h5>
@@ -203,6 +204,9 @@ function Dashboard({
               </div>
             </div>
           </div>
+
+
+          <StatisticsDashboard />
         </div>
 
 
