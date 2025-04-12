@@ -184,7 +184,7 @@ function Dashboard({
                   <h4 className='text-rose-500 font-bold text-sm lg:text-md'>$50</h4>
                 </div>
               </div>
-{/* 
+              {/* 
               <div className='flex items-center gap-2 bg-[#7bf8f8] rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-[#00c0c0]'></span>
                 <div className='flex items-center gap-2'>
@@ -192,6 +192,15 @@ function Dashboard({
                   <h4 className='text-[#00c0c0] font-bold text-sm lg:text-md'>$50</h4>
                 </div>
               </div> */}
+
+
+              <div className='flex items-center gap-2 bg-[#ad92b9] rounded-sm p-2'>
+                <span className='w-4 h-4 rounded-full bg-[#7e00b4]'></span>
+                <div className='flex items-center gap-2'>
+                  <h5 className='text-[#7e00b4] text-sm lg:text-md'>Movies</h5>
+                  <h4 className='font-bold text-[#7e00b4] text-sm lg:text-md'>$50</h4>
+                </div>
+              </div>
 
               <div className='flex items-center gap-2 bg-[#d170c1] rounded-sm p-2'>
                 <span className='w-4 h-4 rounded-full bg-[#72005f]'></span>
@@ -201,13 +210,6 @@ function Dashboard({
                 </div>
               </div>
 
-              <div className='flex items-center gap-2 bg-[#ad92b9] rounded-sm p-2'>
-                <span className='w-4 h-4 rounded-full bg-[#7e00b4]'></span>
-                <div className='flex items-center gap-2'>
-                  <h5 className='text-[#7e00b4] text-sm lg:text-md'>Movies</h5>
-                  <h4 className='font-bold text-[#7e00b4] text-sm lg:text-md'>$50</h4>
-                </div>
-              </div>
             </div>
           </div>
 
