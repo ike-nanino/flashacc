@@ -29,7 +29,7 @@ function Dashboard({
 
 
   return (
-    <section className=' bg-[#c7c7c7] flex no-scrollbar pt-20 lg:pt-3 w-full flex-1'>
+    <section className=' bg-white flex no-scrollbar pt-20 lg:pt-3 w-full flex-1'>
 
       <div className='flex gap-4'>
 

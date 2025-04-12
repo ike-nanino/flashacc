@@ -3,7 +3,7 @@ import React from 'react'
 
 function Investments() {
   return (
-    <div className='w-full bg-white rounded-lg shadow-md pt-4 '>
+    <div className='w-full bg-[#ad92b9] rounded-lg shadow-md pt-4 '>
         <div className='flex items-center justify-between p-2'>
                   <h1 className='font-bold'>Investments</h1>
                   <p className='text-sm text-blue-600 hover:text-blue-800 duration-300 cursor-pointer'>More</p>

@@ -36,10 +36,10 @@ export default function StatisticsDashboard() {
   return (
     <div className="space-y-6 mt-4 px-3 w-full">
       {/* Statistics Section */}
-      <div className="bg-white px-1 py-6 md:py-0 md:p-6 rounded-xl shadow-sm">
+      <div className="bg-black/60 px-1 py-6 md:py-0 md:p-6 rounded-xl shadow-sm">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg font-semibold">Statistics</h2>
-          <span className="text-sm text-gray-500">Last 10 years</span>
+          <span className="text-sm text-white">Last 10 years</span>
         </div>
         <div className="h-64">
           <ResponsiveContainer width="100%" height="100%">
@@ -155,7 +155,7 @@ export default function StatisticsDashboard() {
       
               <div className="flex items-center gap-2">
                   
-                  <div className='p-3 rounded-lg bg-gradient-to-r from-violet-200 to-pink-200'>
+                  <div className='p-3 rounded-lg bg-gradient-to-r from-indigo-200 to-yellow-100'>
                     <Image 
                     src='/images/visa.png'
                     alt="card"
@@ -183,7 +183,7 @@ export default function StatisticsDashboard() {
       
               <div className="flex items-center gap-2">
                   
-                  <div className='p-3 rounded-lg bg-gradient-to-r from-indigo-200 to-yellow-100'>
+                  <div className='p-3 rounded-lg bg-gradient-to-r from-violet-200 to-pink-200'>
                     <Image 
                     src='/images/mastercard.png'
                     alt="card"

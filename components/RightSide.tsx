@@ -21,7 +21,7 @@ function RightSide() {
     <div className='mt-4 bg-transparent rounded-lg shadow-md'>
                 <div className='flex items-center justify-between p-2'>
                   <h1 className='font-bold'>Recent Transactions</h1>
-                  <p className='text-sm text-blue-600 hover:text-blue-800 duration-300 cursor-pointer'>More</p>
+                  <p className='text-sm text-blue-600 hover:bg-gray-200 hover:text-blue-800 duration-300 cursor-pointer rounded-lg p-2 bg-white'>More</p>
           
                 </div>
           

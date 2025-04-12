@@ -229,7 +229,7 @@ export default function DepositPage() {
     };
 
     return (
-        <div className="mt-20 mx-auto py-8 px-4 md:px-0">
+        <div className="pt-20 pb-10 mx-auto lg:py-8 px-4 md:px-0">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
