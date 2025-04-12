@@ -36,7 +36,7 @@ export default function StatisticsDashboard() {
   return (
     <div className="space-y-6 mt-4 px-3 w-full">
       {/* Statistics Section */}
-      <div className="bg-black/60 px-1 py-6 md:py-0 md:p-6 rounded-xl shadow-sm">
+      <div className="bg-black/60 px-1 py-2 md:py-0 md:px-6 rounded-xl shadow-sm">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-lg font-semibold">Statistics</h2>
           <span className="text-sm text-white">Last 10 years</span>
