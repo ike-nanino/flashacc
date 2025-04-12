@@ -153,7 +153,7 @@ function Dashboard({
 
 
               <h2 className='font-medium my-4'>Fast Payment</h2>
-              <div className='px-2 py-1 bg-blue-400 rounded-md'>
+              <div className='px-2 py-1 hover:bg-blue-200 rounded-lg'>
                 <FontAwesomeIcon icon={faPlus} />
               </div>
 
