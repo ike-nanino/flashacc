@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
   ArrowRight, ChevronRight, Shield, Landmark, PieChart,
-  CreditCard, Briefcase, Users, Menu, X, Smartphone,
-  TrendingUp, Award, Clock, Lock, Headphones
+  CreditCard, Briefcase, Menu, X, Smartphone,
+  TrendingUp, Clock, Lock,
 } from 'lucide-react';
+import HomeNav from '@/components/HomeNav';
 
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +51,9 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-slate-50">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
+<HomeNav />
+
+      {/* <nav className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
@@ -62,7 +65,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Desktop menu */}
+          
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 font-medium">Personal</a>
               <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 font-medium">Business</a>
@@ -71,7 +74,6 @@ export default function HomePage() {
               <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors duration-300">Sign In</a>
             </div>
 
-            {/* Mobile menu button */}
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -87,7 +89,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -99,7 +100,7 @@ export default function HomePage() {
             </div>
           </div>
         )}
-      </nav>
+      </nav> */}
 
       {/* Hero Section with Left-to-Right Transitions */}
       <div className="relative bg-white overflow-hidden h-screen">
