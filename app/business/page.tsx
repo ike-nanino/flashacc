@@ -61,46 +61,62 @@ export default function BusinessBanking() {
            </nav>
 
         {/* Hero Section */}
-        <div className="relative h-[500px] lg:h-[600px]">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-900/20 z-10" />
-          <div className="relative h-full w-full">
-            <Image
-              src="/images/menteam.jpg"
-              alt="Business professionals in a meeting"
-              fill
-              priority
-              style={{ objectFit: 'cover' }}
-            />
-          </div>
 
-          <div className="relative z-20 h-full">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-              <div className="max-w-lg">
-                <span className="block text-blue-200 text-lg font-medium mb-2">Business Banking</span>
-                <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                  Solutions that grow with your business
-                </h1>
-                <p className="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
-                  From startups to enterprises, our business banking services are designed to help you succeed in toda&apos;s competitive landscape.
-                </p>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  <a
-                    href="#"
-                    className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-8 shadow-lg"
-                  >
-                    Open Business Account
-                  </a>
-                  <a
-                    href="#"
-                    className="px-6 py-3 border border-blue-200 text-base font-medium rounded-md text-blue-100 hover:bg-blue-800/30 md:py-4 md:text-lg md:px-8"
-                  >
-                    Schedule Consultation
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        <div className="relative h-[600px] lg:h-[700px]">
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <Image
+      src="/images/menteam.jpg"
+      alt="Person using mobile banking app"
+      fill
+      priority
+      style={{ objectFit: 'cover' }}
+    />
+  </div>
+
+  {/* Gradient overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70 z-10" />
+
+  {/* Text content */}
+  <div className="absolute inset-0 z-20 flex items-center">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-lg"
+      >
+        <span className="block text-blue-200 text-lg font-medium mb-2">Business Banking</span>
+        <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+        Solutions that grow with your business
+        </h1>
+        <p className="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg md:mt-5 md:text-xl">
+        From startups to enterprises, our business banking services are designed to help you succeed in toda&apos;s competitive landscape.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-4">
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="#"
+            className="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-8 shadow-lg transition-all duration-300"
+          >
+            Open Business Account
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="#"
+            className="px-6 py-3 border border-blue-200 text-base font-medium rounded-md text-blue-100 hover:bg-blue-800/30 md:py-4 md:text-lg md:px-8 transition-all duration-300"
+          >
+            Schedule Consultation
+          </motion.a>
         </div>
+      </motion.div>
+    </div>
+  </div>
+</div>
+
 
         {/* Business Solutions */}
         <div className="py-16 bg-white">
