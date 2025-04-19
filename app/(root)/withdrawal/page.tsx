@@ -46,6 +46,7 @@ export default function WithdrawalPage() {
   const [isConfirmDialogOpen, setIsConfirmDialogOpen] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  
 
   const accounts = [
     { id: 'savings', name: 'Savings Account', balance: 12450.75 },
